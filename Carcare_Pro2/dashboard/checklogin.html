@@ -1,0 +1,9 @@
+<meta charset="utf-8">
+<?php
+	@session_start();
+	if(empty($_SESSION['$user'])){
+	echo"คุณไม่มีสิทธิ์เข้าถึง";	
+	exit;
+	}
+
+?>

@@ -1,0 +1,18 @@
+<script language="JavaScript">
+function closewin() {
+window.opener.location.reload();
+self.close();
+}
+$close = closewin();
+</script>
+<?php
+require('../config/config.php');
+if(isset($_GET['cusid'])){
+  $sql ="DELETE FROM customer WHERE cusid = '$_GET[cusid]'";
+  mysqli_query($link,$sql) or die(mysqli_error($link));
+echo "<center>ลบข้อมูลแล้ว!<br></center>";
+echo '<script type="text/javascript">window.location="customer.php";</script>'; 
+echo @$close;
+}
+mysqli_close($link);
+ ?>
