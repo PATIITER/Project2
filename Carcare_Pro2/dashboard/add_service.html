@@ -19,7 +19,7 @@ $str = "INSERT INTO service VALUES('','$name','$scar','$ctype','$csize','$svname
    mysqli_query($link,$str)or die("เพิ่มข้อมูลการบริการไม่ได้");
 	 echo"<script>";
 	 echo"alert('เพิ่มข้อมูลการบริการเรียบร้อยแล้ว');";
-	 echo"window.location='service.php';";
+	 echo"window.location='service.html';";
 	 echo"</script>";
 }
 ?><!DOCTYPE html>
@@ -89,24 +89,24 @@ $str = "INSERT INTO service VALUES('','$name','$scar','$ctype','$csize','$svname
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="index.php">
+        <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>
       </li>
   <li class="nav-item">
-        <a class="nav-link" href="customer.php">
+        <a class="nav-link" href="customer.html">
           <i class="fas fa-fw fa-book"></i>
           <span>ข้อมูลลูกค้า</span></a>
       </li>
 	   <li class="nav-item">
-        <a class="nav-link" href="add_customer.php">
+        <a class="nav-link" href="add_customer.html">
           <i class="fas fa-fw fa-plus"></i>
           <span>เพิ่มข้อมูลลูกค้า</span></a>
       </li>
       <li class="nav-item">
 	  
-        <a class="nav-link" href="add_service.php">
+        <a class="nav-link" href="add_service.html">
           <i class="fas fa-fw fa-list"></i>
           <span>การบริการ</span></a>
       </li> 	  
@@ -126,12 +126,12 @@ $str = "INSERT INTO service VALUES('','$name','$scar','$ctype','$csize','$svname
           <span>เบิกใช้สินค้า</span></a>
       </li>
 	  <li class="nav-item">
-        <a class="nav-link" href="employee.php">
+        <a class="nav-link" href="employee.html">
           <i class="fas fa-fw fa-book"></i>
           <span>ข้อมูลพนักงาน</span></a>
       </li>
 	  <li class="nav-item">
-        <a class="nav-link" href="add_employee.php">
+        <a class="nav-link" href="add_employee.html">
           <i class="fas fa-fw fa-plus"></i>
           <span>เพิ่มข้อมูลพนักงาน</span></a>
       </li>
@@ -142,7 +142,7 @@ $str = "INSERT INTO service VALUES('','$name','$scar','$ctype','$csize','$svname
         </a>
         <div class="dropdown-menu" aria-labelledby="Dropdown">
           <a class="dropdown-item" href="#">รายงานการสั่งซื้อ</a>
-          <a class="dropdown-item" href="service.php">รายงานการบริการ</a>
+          <a class="dropdown-item" href="service.html">รายงานการบริการ</a>
           <a class="dropdown-item" href="#">รายงานสินค้าคงเหลือ</a>
 		  <a class="dropdown-item" href="#">รายงานการเบิกใช้สินค้า</a>
         </div>
@@ -266,21 +266,14 @@ echo $data['servname'];?></option>
 </div>
             </div>
 </div>
-          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+         
         </div>
 
       </div>
       <!-- /.container-fluid -->
 
       <!-- Sticky Footer -->
-      <footer class="sticky-footer">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright © Your Website 2019</span>
-          </div>
-        </div>
-      </footer>
-
+      
     </div>
     <!-- /.content-wrapper -->
 
@@ -305,7 +298,7 @@ echo $data['servname'];?></option>
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.php">Logout</a>
+          <a class="btn btn-primary" href="login.html">Logout</a>
         </div>
       </div>
     </div>
